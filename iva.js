@@ -27,3 +27,19 @@ let leche = {
 }
 console.log('El precio del boli con iva: '+boli.total+' y la cuota del iva: '+boli.iva+' €')
 console.log('El precio de la leche con iva: '+leche.total+' y la cuota del iva: '+leche.iva+' €')
+
+//Bucles
+
+let producto1 = { nombre: curso, precio: 200, iva: false}
+let producto2 = { nombre: libreta, precio: 10, iva: true}
+
+let productos = [  producto1, producto2 ]
+
+for (let i=0; i<productos.length; i++){
+    if (productos[i].iva == true){
+        let precioTotal = calcularTotalIva(productos[i].precio);
+        console.log(`${productos[i].nombre} tiene iva y el precio total es: ${precioTotal} €`)
+    } else {
+        console.log(`${productos[i].nombre} no tiene iva y el precio es : ${productos[i].precio}`)
+    }
+}
