@@ -30,8 +30,8 @@ console.log('El precio de la leche con iva: '+leche.total+' y la cuota del iva: 
 
 //Bucles
 
-let producto1 = { nombre: curso, precio: 200, iva: false}
-let producto2 = { nombre: libreta, precio: 10, iva: true}
+let producto1 = { nombre: 'curso', precio: 200, iva: false}
+let producto2 = { nombre: 'libreta', precio: 10, iva: true}
 
 let productos = [  producto1, producto2 ]
 
